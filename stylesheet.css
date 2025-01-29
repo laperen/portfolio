@@ -1,0 +1,129 @@
+body{
+    text-align: center;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    font-family: arial, sans-serif; 
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #000000;
+}
+h1, h2{
+    margin: 0px;
+}
+button,select,.mybtnstyle{
+    background-color: #3372a3;
+    border-color: #27587e;
+    color: #a2c8e6;
+}
+.inactivebutton{
+    background-color: #3372a37e;
+    border-color: #27587e77;
+    color: #a2c8e6;
+}
+.hidden{
+    display: none !important;
+}
+.bannerbutton{
+    padding: 5px;
+    font-size: 17px;
+}
+.fillset{
+    position: fixed;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    top:0;
+    z-index: -1;
+}
+.container{
+    background-color: #3f7298;
+}
+.bgimg{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: 50% 50%;
+}
+.fade-transit, .move-transit{
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 10s;
+}
+.fade-transit {
+	opacity: 1;
+    animation-name: fadeTransitOpacity;
+}
+.move-transit{
+    animation-name: moveTransit;
+}
+@keyframes fadeTransitOpacity {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes moveTransit{
+    0%{
+        object-position: 50% 0%;
+    }
+    100%{
+        object-position: 50% 100%;
+    }
+}
+.projectpic {
+    width: 80%;
+    overflow: hidden;
+}
+.projecttext {
+    margin: 20px;
+    padding: 20px;
+    background-color: #0000002a;
+    text-align: left;
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+}
+.thumbselect{
+    display: inline-block;
+    width: 160px;
+    height: 90px;
+    cursor: pointer;
+}
+.largeiconselect{
+    width: 320px;
+    height: 180px;
+    cursor: pointer;
+}
+.overlaypic{
+    position: relative;
+    z-index: 2;
+}
+.projectselection{
+    margin-left: 5%;
+    margin-right: 5%;
+    list-style: none;
+    display: grid; 
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    overflow-x: auto;
+}
+li{
+    margin: 8px;
+}
+.bgcine{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shaun Goh Projects</title>
+        <link href="../stylesheet.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./m3c4/m3c4.css">
+        <script src="./m3c4/board.js"></script>
+        <script src="./m3c4/intro.js"></script>
+        <script src="../common.js"></script>
+        <script>
+            function ShowPic(name){
+                overlaypic.src = name;
+                Activate(pictureoverlay);
+            }
+        </script>
+    </head>
+    <body class="container">
+        <div>
+            <button class="bannerbutton" onclick="location.href= './work.html';">Work</button>
+            <a class="inactivebutton bannerbutton">Projects</a>
+            <button class="bannerbutton" onclick="location.href= './art.html';">Art</button>
+            <button class="bannerbutton" onclick="location.href= '../index.html';">About</button>
+        </div>
+        <div style="height: 40px;"></div>
+        <div style="display: flex;">
+            <div style="flex-grow: 1;"></div>
+            <ul class="projectselection">
+                <li>
+                    <b>StoryNodes</b><br>
+                    <img class="thumbselect" src="./assets/StoryNodesThumb.png" onclick="GoToEle('storynodes', projectscontainer);">
+                </li>
+                <li>
+                    <b>M3C4</b><br>
+                    <img class="thumbselect" src="./assets/m3c4thumb.png" onclick="GoToEle('match3connect4', projectscontainer);">
+                </li>
+                <li>
+                    <b>Journey to the Moon</b><br>
+                    <img class="thumbselect" src="./assets/jtmthumb.jpg" onclick="GoToEle('journeymoon', projectscontainer);">
+                </li>
+            </ul>
+            <div style="flex-grow: 1;"></div>
+        </div>
+        <div style="display: flex;">
+            <div style="flex-grow: 1;"></div>
+            <div id="projectscontainer" style="max-width: 800px;">
+                <div id="storynodes">
+                    <div class="projecttext">
+                        <h1>StoryNodes</h1>
+                        <ul>
+                            <li>A passion project I dabble with during my free time.</li>
+                            <li>Made with HTML/CSS/JavaScript</li>
+                            <li>This is a web editor for creating narrative games and branching dialogue.</li>
+                            <li>The main site of StoryNodes can be found <a href="https://storynodes.eu5.org/" target="_blank" rel="noopener noreferrer">here</a></li>
+                        </ul>
+                    </div>
+                    How the dialogue editor looks like<br>
+                    <div>
+                        <img class="projectpic" src="./assets/StoryNodesThumb.png">
+                    </div>
+                    <div class="projecttext">
+                        <h2>Scripting and Functionality</h2>
+                        <ul>
+                            <li>Create and Import json files as project files.</li>
+                            <li>Has accompanying applications, such as localization, to support the main application.</li>
+                            <li>Builds a packaged zip folder containing built files, for combining with web projects provided in the <a href="https://storynodes.eu5.org/" target="_blank" rel="noopener noreferrer">main site</a>.</li>
+                            <li>The Unity importing tool is an ongoing work in progress</li>
+                        </ul>
+                    </div>
+                    What a built web project can look like with some art assets applied<br>
+                    <div>
+                        <img class="largeiconselect" src="./assets/41.png" onclick="ShowPic('./assets/41.png');">
+                        <img class="largeiconselect" src="./assets/42.png" onclick="ShowPic('./assets/42.png');">
+                    </div>
+                    <div class="projecttext">
+                        <h2>Trials and Tribulations</h2>
+                        <ul>
+                            <li>The project started as a Unity plugin, but functionality overscoped to the point Unity Editor Scripting became a hinderance.</li>
+                            <li>After breaking the project away from Unity, it became a way for me to learn web development.</li>
+                            <li>As my familiarity with web development grew, so did the features I envisioned for this tool.</li>
+                            <li>Creating teaching tools too early was a mistake, since they very quickly became outdated as this tool evolved.</li>
+                            <li>While there was consideration to make this a server based application, I ultimately did not want to deal with account management, at least not yet.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="match3connect4">
+                    <div class="projecttext">
+                        <h1>Match 3 Connect 4</h1>
+                        <ul>
+                            <li>A small game idea of adding the token removal mechanic of match 3 games, into the typical connect 4 board game.</li>
+                            <li>Made with HTML/CSS/JavaScript</li>
+                            <li>The win condition is the same as connect 4; get at minimum 4 of the same color in a row, be it horizontally, vertically, or diagonally.</li>
+                            <li>The mix up is, every token has 1 of 3 different symbols on them. If a minimum of 3 tokens in a row, horizontally or vertically, have the same symbol, they are removed from the game as per match 3 rules.</li>
+                            <li>Can be played <a href="./m3c4/index.html" target="_blank" rel="noopener noreferrer">here</a>, against an AI, or turn by turn with a friend.</li>
+                        </ul>
+                    </div>
+                    Game previews showcasing the combination of mechanics.<br>
+                    <div style="display: flex;">
+                        <div style="flex-grow: 1;"></div>
+                        <div id="board" class="board"></div>
+                        <div style="flex-grow: 1;"></div>
+                    </div>
+                    <div class="projecttext">
+                        <h2>Scripting and Functionality</h2>
+                        <ul>
+                            <li>There are no images, anything that isn't text has been created with CSS.</li>
+                            <li>Figuring out how to detect color matches in 8 directions, to determine if a win condition has been met.</li>
+                            <li>Figuring out how to detect symbol matches in 4 directions, to determine if tokens should be removed.</li>
+                            <li>A convincing enough enemy AI to play against in the event a 2nd player isn't available.</li>
+                        </ul>
+                    </div>
+                    <div class="projecttext">
+                        <h2>Trials and Tribulations</h2>
+                        <ul>
+                            <li>This was my first actual web project, made for the purpose of learning web development, in as full a capacity as I could reach alone.</li>
+                            <li>There was an online multiplayer version, since removed because I have not found a new free host for my NodeJS server, after <a href="https://www.heroku.com/" target="_blank" rel="noopener noreferrer">Heroku</a> changed their terms of service, essentially eliminating all their free users.</li>
+                            <li>Learning anything for the first time is challenging, although things felt especially obtuse with CSS, at least initially. Comparitively, I used my experience in Unity C# to springboard my education in JavaScript.</li>
+                            <li>Learning to delay actions with Asyncs, Awaits, and timers, allowing players to make sense of the results of actions. Stepping away from a game engine's update loop was an interesting experience, getting me to understand time is what I make of it in a project of my own making.</li>
+                            <li>The enemy AI was especially interesting, learning of a technique to simulate actions and score them against each other, in order to find the optimal action to take. For anything complex, I would expect this technique to require heavy abstraction of complex data, to run simulations at a reasonable rate.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="journeymoon">
+                    <div class="projecttext">
+                        <h1>Journey to the Moon</h1>
+                        <ul>
+                            <li>This is a 6 man team student project, made in a year.</li>
+                            <li>Made in Unity</li>
+                            <li>This is a 3D action puzzle game.</li>
+                            <li>Awarded "Best in Gameplay & Design" in "Merlion Animation Week 2016"</li>
+                            <li>Official school link can be found <a href="http://games.digipen.edu/games/journey-to-the-moon#.WGiCGVN9670" target="_blank" rel="noopener noreferrer">here</a></li>
+                        </ul>
+                    </div>
+                    The game's showcase trailer, also viewable <a href="https://www.youtube.com/watch?v=-QwOvHhbPAU" target="_blank" rel="noopener noreferrer">on youtube</a><br>
+                    <video class="projectpic" src="./assets/Journey To The Moon Trailer.mp4" controls></video>
+                    <div class="projecttext">
+                        <h2>Scripting and Functionality</h2>
+                        <ul>
+                            <li>Created all player controls and enemy behavior.</li>
+                            <li>Made sure animations and behavior were synchronized.</li>
+                        </ul>
+                    </div>
+                    <div class="projecttext">
+                        <h2>Responsibilities</h2>
+                        <ul>
+                            <li>Created all models and animations, of the player and all enemies.</li>
+                            <li>Made sure combat was fun and engaging, while still usable in puzzles.</li>
+                            <li>Made sure enemies andbosses were balanced.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img class="largeiconselect" src="./assets/JourneyToTheMoon1.jpg" onclick="ShowPic('./assets/JourneyToTheMoon1.jpg');">
+                        <img class="largeiconselect" src="./assets/JourneyToTheMoon2.jpg" onclick="ShowPic('./assets/JourneyToTheMoon2.jpg');">
+                    </div>
+                    <div class="projecttext">
+                        <h2>Trials and Tribulations</h2>
+                        <ul>
+                            <li>Playing combat and making combat are 2 very different things. Making a combat system requires balancing its complexity with how intitive it is.</li>
+                            <li>Because I was in charge of art, design and scripting all at the same time, time management and crunch was a norm during this period.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+        <div style="height: 40px;"></div>
+        <div id="pictureoverlay" class="overlay hidden" style="background-color: #0000006d; display: flex; flex-direction: column;" onclick="Deactivate(pictureoverlay);">
+            <a style="flex-grow: 1;"></a>
+            <img id="overlaypic" class="overlaypic">
+            <a style="flex-grow: 1;"></a>
+        </div>
+    </body>
+    <script>
+        GoToEle('storynodes', projectscontainer);
+        PlayIntro(intros[Math.floor(Math.random()*intros.length)]);
+    </script>
+</html>

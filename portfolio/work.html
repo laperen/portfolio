@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shaun Goh Work</title>
+        <link href="../stylesheet.css" rel="stylesheet" type="text/css">
+        <script src="../common.js"></script>
+    </head>
+    <body class="container">
+        <div>
+            <a class="inactivebutton bannerbutton">Work</a>
+            <button class="bannerbutton" onclick="location.href= './projects.html';">Projects</button>
+            <button class="bannerbutton" onclick="location.href= './art.html';">Art</button>
+            <button class="bannerbutton" onclick="location.href= '../index.html';">About</button>
+        </div>
+        <div style="height: 40px;"></div>
+        <div style="display: flex;">
+            <div style="flex-grow: 1;"></div>
+            <ul class="projectselection">
+                <li>
+                    <b>ICA Border Control</b><br>
+                    <img class="thumbselect" src="./assets/ICA_eyetrack_thumbnail.jpg" onclick="GoToEle('icaeyetrack', projectscontainer);StopAllVideos();">
+                </li>
+                <li>
+                    <b>ASTAR VMF</b><br>
+                    <img class="thumbselect" src="./assets/VMFThumb.jpg" onclick="GoToEle('factorysim', projectscontainer);StopAllVideos();">
+                </li>
+                <li>
+                    <b>SIT VNL</b><br>
+                    <img class="thumbselect" src="./assets/VNLThumb.jpg" onclick="GoToEle('sitvnl', projectscontainer);StopAllVideos();">
+                </li>
+            </ul>
+            <div style="flex-grow: 1;"></div>
+        </div>
+        <div style="display: flex;">
+            <div style="flex-grow: 1;"></div>
+            <div id="projectscontainer" style="max-width: 800px;">
+                <div id="icaeyetrack">
+                    <div class="projecttext">
+                        <h1>ICA Border Control Training Application</h1>
+                        <ul>
+                            <li>This is a Solo project while working in <a href="https://www.stengg.com/">ST Engineering</a></li>
+                            <li>Made in Unity</li>
+                            <li>This is an Eye-tracking training application, for the purpose of training future border control officers.</li>
+                        </ul>
+                    </div>
+                    A promotional video by ICA, also shown <a href="https://www.facebook.com/Immigration.Checkpoints.Authority/videos/577863753318599/?ref=embed_video&t=0">here on facebook</a>.<br>
+                    <video class="projectpic" src="./assets/ICA_EyeTracker.mp4" controls></video>
+                    <div class="projecttext">
+                        <h2>Scripting and Functionality</h2>
+                        <ul>
+                            <li>Created a 2D Scenario format, which took note of when subject gazed at a marked area of interest.</li>
+                            <li>Data-playback, not video playback, of eye tracking visualizations.</li>
+                            <li>Networking between trainer and trainee stations.</li>
+                        </ul>
+                    </div>
+                    <div class="projecttext">
+                        <h2>Responsibilities</h2>
+                        <ul>
+                            <li>Made sure heatmap and eye-tracking visualizations were intuitive for instructors.</li>
+                            <li>Editor for creating scenarios by trainers, for trainees, had to be simple to use, yet fulfil complex training needs.</li>
+                            <li>Results and review screens must contain all important information available at a clance.</li>
+                        </ul>
+                    </div>
+                    <div class="projecttext">
+                        <h2>Trials and Tribulations</h2>
+                        <ul>
+                            <li>Working alone meant doing everything, including gathering and vetting customer rquirements.</li>
+                            <li>The secure nature of the application made netowrking features particularly challenging to implement, requiring a complete overhaul of core functionality while nearly 3/4 of the way into the project.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="factorysim">
+                    <div class="projecttext">
+                        <h1>ASTAR SimTech Virtual Manufacturing Factory</h1>
+                        <ul>
+                            <li>This was a 2-man project while working in ASTAR under their <a href="https://www.a-star.edu.sg/simtech">SimTech</a> department.</li>
+                            <li>Made in Unity</li>
+                            <li>This is a multiplayer, multi-platform, manufacturing factory simulator.</li>
+                            <li>Use cases included training technicians on maintainence processes, and simulating real world factories for virtual tours</li>
+                        </ul>
+                    </div>
+                    The multiplayer multiplatform capabilities, with 2 players running a training scenario.<br>
+                    <video class="projectpic" src="./assets/VMF_Showcase1-1.mp4" controls></video>
+                    <div class="projecttext">
+                        <h2>Scripting and Functionality</h2>
+                        <ul>
+                            <li>Frontend application has Desktop, Mobile, and VR versions.</li>
+                            <li>All frontend applications connect to the same server, and can see each other while they are in the same room.</li>
+                            <li>Players are able to create new rooms, and join existing rooms.</li>
+                            <li>When creating a room, players have a selection of factories to choose to enter.</li>
+                            <li>If the room created is for training, players in the same room will be able to complete the scenario they are in collaboratively.</li>
+                            <li>If the room create is for visualization, players in the same room will see the same simulation.</li>
+                            <li>There is the option to replicate actions of a real factory, but requires that the factory maintains a MQTT broker with messages from the machines flowing through.</li>
+                        </ul>
+                    </div>
+                    An older version of the application, but showcasing a virtual simulation of simple factory operations<br>
+                    <video class="projectpic" src="./assets/VMF_Showcase2-1.mp4" controls></video>
+                    <div class="projecttext">
+                        <h2>Responsibilities</h2>
+                        <ul>
+                            <li>Created architecture for multi-platform detection, to spawn in the appropriate player controller object, for the player to interact with the world.</li>
+                            <li>The reason to go for multi-platform detection rather than deliberately shipping any one version of the app with a specific player controller, is because Desktop and Mobile can enable VR.</li>
+                            <li>Interactable objects have all interation scripts, to react to all player controller types at all times, allowing designers to only make the scene once, but be usable on all target platforms.</li>
+                            <li>The user interaface has to change based on the platform as well, being a screen overlay for PC and Mobile, but going into world space ethereal screens while in VR.</li>
+                        </ul>
+                    </div>
+                    <div class="projecttext">
+                        <h2>Trials and Tribulations</h2>
+                        <ul>
+                            <li>Creating a multiplayer multiplatform interactive suite has been an aspiration of mine. 
+                                Being given the chance to get paid while doing it was quite a dream come true.</li>
+                            <li>Although not my first time dealing with multiplayer, this was the first time I had to deal with object ownership during player interactions, a humbling experience.</li>
+                            <li>Designing UI capable of switching between VR and non-VR platforms was a challenge. Although the solution I came up with in this project works, it is ultimately a pain to setup any UI with it.</li>
+                            <li>The project ultimately ended up being a pitch piece due to a lack of demand.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div id="sitvnl">
+                    <div class="projecttext">
+                        <h1>SIT Virtual Network Lab</h1>
+                        <ul>
+                            <li>This was a 3-man project while working in <a href="https://www.singaporetech.edu.sg/">SIT</a>, in partnership with DigiPen.</li>
+                            <li>Made in Unity</li>
+                            <li>This is a multi-platform web based teaching aid.</li>
+                            <li>A virtual sandbox simulating a Network Lab environment, for players to practice their curriculum.</li>
+                        </ul>
+                    </div>
+                    A small demonstration of features<br>
+                    <video class="projectpic" src="./assets/vnl-beta-demo-with-sub.mp4" controls></video>
+                    <div class="projecttext">
+                        <h2>Scripting and Functionality</h2>
+                        <ul>
+                            <li>A flexible interaction system which allows player controllers of multiple platforms to interact with objects, while remaining intuitive to use for the player.</li>
+                            <li>Players are able to create network labs, choosing what network objects they want, such as switchers and computers.</li>
+                            <li>While in a network lab, the player has the option to enter an editing mode, adding and removing network objects as they please.</li>
+                            <li>Network objects can be connected with network cables.</li>
+                            <li>Laptop OS was replicated minimally, just enough to simulate network lab applications.</li>
+                        </ul>
+                    </div>
+                    <div class="projecttext">
+                        <h2>Responsibilities</h2>
+                        <ul>
+                            <li>The 3 man team was divided between back-end, front-end, art and design. I was working on the front-end.</li>
+                            <li>Created architecture for multi-platform detection, to spawn in the appropriate player controller object, for the player to interact with the world.</li>
+                            <li>Multi-platform detection is absolutely necessary, since this is a web application.</li>
+                            <li>Interactable objects have all interation scripts, to react to all player controller types at all times, allowing designers to only make the scene once, but be usable on all target platforms.</li>
+                            <li>The user interaface has to change based on the platform as well, being a screen overlay for PC and Mobile, but going into world space ethereal screens while in VR.</li>
+                            <li>Lab creation and lab editing has to be as easy to use as possible.</li>
+                        </ul>
+                    </div>
+                    <div class="projecttext">
+                        <h2>Trials and Tribulations</h2>
+                        <ul>
+                            <li>I joined the team mid-way in development. Working from a halfway created project was quite a different experience.</li>
+                            <li>With my responsibility to work on the front-end, it became my call for what parts of the code had to be removed, and what could be kept to integrate with what I bring in.</li>
+                            <li>Initially, the scene setup, object scaling, and player interaction code was a mess, and had to be overhauled.</li>
+                            <li>Overall this project was remarkably similar to the ASTAR VMF project, aside from being a web application. I took it as an opportunity to refine part of what I had worked on in the previous project.</li>
+                            <li>The player controls for PC and Mobile are much more intuitive even compared to my old work.</li>
+                            <li>Setup for switching between screen overlay and world space is nolonger difficult to work with.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+
+        <div style="height: 40px;"></div>
+    </body>
+    <script>
+        let videoelements = document.getElementsByTagName('video');
+        function StopAllVideos(){
+            for(let i = 0, max = videoelements.length; i < max; i++){
+                let vid = videoelements[i];
+                vid.pause();
+            }
+        }
+        GoToEle('icaeyetrack', projectscontainer);
+    </script>
+</html>

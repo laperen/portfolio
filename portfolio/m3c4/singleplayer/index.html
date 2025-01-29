@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../m3c4.css">
+        <script src="../board.js"></script>
+        <script src="../options.js"></script>
+        <script src="./singleplayer.js"></script>
+    </head>
+    <body>
+
+        <div style="display: flex;">
+            <div style="flex-grow: 1;"></div>
+
+            <div>
+                <div><a href="../index.html">Return to Mode Selection</a></div>
+                <div>
+                    <div id="uitoken" class="token" style="position:relative;">
+                        <div id="uisymbol" class="symbol"></div>
+                    </div>
+                </div>
+                <div id="board" class="board"></div>
+                <div id="finish" style="display: none; text-align: center;">
+                    <div id="yellow_win" class="finish_text finish_yellow">You Win</div>
+                    <div id="red_win" class="finish_text finish_red">AI Wins</div>
+                    <div id="draw" class="finish_text">Draw</div>
+                    
+                    <button onclick='location.href="../"'>Return to Mode Selection</button>
+                    <button onclick='location.reload()'>Play Again</button>
+                </div>
+                <div id="options" class="options"></div>
+            </div>
+
+            <div style="flex-grow: 1;"></div>
+        </div>
+
+        <script>
+            GameStart();
+        </script>
+    </body>
+</html>

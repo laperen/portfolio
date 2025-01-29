@@ -1,0 +1,75 @@
+.message{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.applyfont{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.board{
+    display: flex;
+    background-color: #4761d4;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vmin;
+}
+.finish_text{
+    display: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 5vmin;
+    text-align: center;
+    text-shadow: #0000005e;
+}
+.finish_yellow{
+    color: #dac863;
+}
+.finish_red{
+    color: #ce6363;
+}
+.token{
+    pointer-events: none;
+    border-radius: 50%;
+    display: flex;
+    background-color: #ffffff;
+}
+.yellow{
+    background-color: #dac863;
+}
+.highlight_yellow{
+    background-color: #fff4b7;
+}
+.desaturate_yellow{
+    background-color: #756b2e;
+}
+.red{
+    background-color: #ce6363;
+}
+.highlight_red{
+    background-color: #ffaeae;
+}
+.desaturate_red{
+    background-color: #812f2f;
+}
+
+.shape{
+    pointer-events: none;
+    display: none;
+    align-self: center;
+    width: 60%;
+    height: 60%;
+    background-color: #0000005e;
+    margin: 20%;
+}
+.square{
+    display: block;
+}
+.circle{
+    display: block;
+    border-radius: 50%;
+}
+.triangle{
+    display: block;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

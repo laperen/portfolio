@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./m3c4.css">
+        <script src="./board.js"></script>
+        <script src="./intro.js"></script>
+    </head>
+
+    <body style="text-align:center;">
+        <h1>M3C4</h1>
+        
+        <div style="display: flex;">
+            <div style="flex-grow: 1;"></div>
+            <div id="board" class="board"></div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+
+        <p><a href="./singleplayer/index.html">Single Player</a></p>
+        <p><a href="./localplayer/index.html">Local Player</a></p>
+        <!--p><a href="./multiplayer">Online Player</a></p-->
+        
+        <script>
+            PlayIntro(intros[Math.floor(Math.random()*intros.length)]);
+        </script>
+    </body>
+</html>

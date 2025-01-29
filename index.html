@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Shaun Goh</title>
+        <link href="./stylesheet.css" rel="stylesheet" type="text/css">
+        <script src="./common.js"></script>
+    </head>
+    <body>
+        <div id="fadercover" class="fillset fade-transit">
+            <img class="bgimg move-transit" src="./portfolio/assets/jtmthumbHi.jpg">
+            <img class="bgimg move-transit" src="./portfolio/assets/VMFThumbHi.jpg">
+            <img class="bgimg move-transit" src="./portfolio/assets/VNLThumbHi.jpg">
+            <img class="bgimg move-transit" src="./portfolio/assets/chibi_robot_lineup_by_laperen-d4eep31.jpg">
+            <img class="bgimg move-transit" src="./portfolio/assets/serasprogress8.png">
+            <img class="bgimg move-transit" src="./portfolio/assets/20241016_075449.jpg">
+        </div>
+        <div style="height: 200px;"></div>
+        <div style="height: 100px;"></div>
+        <div class="container">
+            <div>
+                <button class="bannerbutton" onclick="location.href= './portfolio/work.html';">Work</button>
+                <button class="bannerbutton" onclick="location.href= './portfolio/projects.html';">Projects</button>
+                <button class="bannerbutton" onclick="location.href= './portfolio/art.html';">Art</button>
+                <a class="inactivebutton bannerbutton">About</a>
+            </div>
+            <div style="display: flex;">
+                <div style="flex-grow: 1;"></div>
+                <div style="max-width: 800px;">
+                    <div class="projecttext">
+                        <h1>Hello there</h1>
+                        <p>My name is <b>Goh Jun Wei Shaun</b>, I graduated from DigiPen as a graduate from the Bachelor of Arts in Game Design course.</p>
+                        <p>In the course, I learned the fundamentals of game design, using tools to create digital games, building games in teams, and apply them through repeated practice with projects and mini projects throughout the course.</p>
+                        <p>I've since applied what I've learnt in my work and personal projects. My work has brought me closer to the technical side of things rather than design, although I try to keep what I'm lacking limber with personal projects and partnerships with friends</p>
+                    </div>
+                    <div style="display: flex;">
+                        <div class="projecttext" style="flex-grow: 0.4;">
+                            <h2>Software Competencies</h2>
+                            <ul>
+                                <li>Unity 3D</li>
+                                <li>HTML5/CSS/JS</li>
+                                <li>Audacity</li>
+                                <li>Unreal Engine</li>
+                                <li>Autodesk Maya</li>
+                                <li>Photoshop</li>
+                            </ul>
+                        </div>
+                        <div class="projecttext" style="flex-grow: 1;">
+                            <h2>Skills</h2>
+                            <ul>
+                                <li>C# scripting(in Unity)</li>
+                                <li>Vanilla web development</li>
+                                <li>Level Design</li>
+                                <li>Pixel Art</li>
+                                <li>Sound Editing</li>
+                                <li>Sketching and illustration</li>
+                                <li>3D Modeling and Texturing</li>
+                                <li>Basic 3D animation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projecttext">
+                        <h2>Resume</h2>
+                        <button class="bannerbutton" onclick="resumepdf.click();">Download as PDF</button>
+                        <button class="bannerbutton" onclick="resumeword.click();">Download as Word Doc</button>
+                        <a id="resumepdf" class="hidden" href="./portfolio/assets/GohJunWeiShaun_Resume.pdf" download="GohJunWeiShaun_Resume.pdf"></a>
+                        <a id="resumeword" class="hidden" href="./portfolio/assets/GohJunWeiShaun_Resume.docx" download="GohJunWeiShaun_Resume.docx"></a>
+                    </div>
+                    <div class="projecttext">
+                        <h2>More about Me</h2>
+                        <p>
+                            I started my road to designing games when I was 13 years old, for fun. 
+                            My first endevor was a modification to Checkers/Draughts, which naturally failed horribly.
+                        </p>
+                        <p>
+                            Undeterred, I continued modifying the rules of all sorts of common board and card games such as Chess, Snakes & Ladders, Monopoly, and UNO. 
+                            These modifications although by no means worth noting did teach me, even the slightest change to the rules will affect the play experience.
+                        </p>
+                        <p>                
+                            After much modification and gaining enough confidence when I was 18, I decided to try making rules for a game of my own design. 
+                            Positive feedback from my peers solidifed my descision to enrole into DigiPen to continue my game design journey into digital games.
+                        </p>
+                        <p>
+                            After graduating from DigiPen, my work somehow or another has had me gravitate more towards coding rather than design.
+                            Not that it's a problem, just a specialization I did not expect to take considering the course I came from.
+                            I am however grateful for it, giving me more freedom to create almost any feature I envision. 
+                        </p>
+                    </div>
+                    <div style="height: 40px;"></div>
+                </div>
+                <div style="flex-grow: 1;"></div>
+            </div>
+        </div>
+    </body>
+    <script src="./portfolio/index.js"></script>
+</html>

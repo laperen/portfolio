@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shaun Goh Art</title>
+        <link href="../stylesheet.css" rel="stylesheet" type="text/css">
+        <script src="../common.js"></script>
+        <script>
+            function ShowPic(name){
+                overlaypic.src = name;
+                Activate(pictureoverlay);
+            }
+        </script>
+    </head>
+    <body class="container">
+        <div>
+            <button class="bannerbutton" onclick="location.href= './work.html';">Work</button>
+            <button class="bannerbutton" onclick="location.href= './projects.html';">Projects</button>
+            <a class="inactivebutton bannerbutton">Art</a>
+            <button class="bannerbutton" onclick="location.href= '../index.html';">About</button>
+        </div>
+        <div style="height: 40px;"></div>
+        <div style="display: flex;">
+            <div style="flex-grow: 1;"></div>
+            <div id="projectscontainer" style="max-width: 800px;">
+                <div class="projecttext">
+                    <h1>2D Art</h1>
+                    <p>
+                        I don't draw or paint too often, so the most I am willing to show a handful of conceptual sketches.
+                    </p>
+                </div>
+                <div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/brainiacinhumanconcept.png" onclick="ShowPic('./assets/brainiacinhumanconcept.png');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/wuxia.jpg" onclick="ShowPic('./assets/wuxia.jpg');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/chibi_robot_lineup_by_laperen-d4eep31.jpg" onclick="ShowPic('./assets/chibi_robot_lineup_by_laperen-d4eep31.jpg');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/pizza.jpg" onclick="ShowPic('./assets/pizza.jpg');">
+                    </div>
+                </div>
+                <div class="projecttext">
+                    <h1>3D Art</h1>
+                    <p>
+                        I took up low-poly 3D modelling and texturing as a hobby, accumulating quite a good amount of practice with fan-arts.
+                    </p>
+                </div>
+                <div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/humanmesh.png" onclick="ShowPic('./assets/humanmesh.png');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/low_specironman_mkiii_suit_by_laperen-d50jf77.gif" onclick="ShowPic('./assets/low_specironman_mkiii_suit_by_laperen-d50jf77.gif');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/robocop_by_laperen-d4k1tgb.png" onclick="ShowPic('./assets/robocop_by_laperen-d4k1tgb.png');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/manual_cel_shade_showcase.GIF" onclick="ShowPic('./assets/manual_cel_shade_showcase.GIF');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/jack__pose_and_base_by_laperen-d3ronv8.jpg" onclick="ShowPic('./assets/jack__pose_and_base_by_laperen-d3ronv8.jpg');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/serasprogress8.png" onclick="ShowPic('./assets/serasprogress8.png');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/gif-frames_test1.gif" onclick="ShowPic('./assets/gif-frames_test1.gif');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/skull_robot_by_laperen-d5lztdt.gif" onclick="ShowPic('./assets/skull_robot_by_laperen-d5lztdt.gif');">
+                    </div>
+                </div>
+                <div class="projecttext">
+                    <h1>Physical Medium</h1>
+                    <p>
+                        I dabble with custom plastic models and needle felting from time to time.
+                    </p>
+                </div>
+                <div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/20201121_102258.jpg" onclick="ShowPic('./assets/20201121_102258.jpg');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/20241016_075449.jpg" onclick="ShowPic('./assets/20241016_075449.jpg');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/20241014_083713.jpg" onclick="ShowPic('./assets/20241014_083713.jpg');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/20240601_145117.jpg" onclick="ShowPic('./assets/20240601_145117.jpg');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/20240427_235208.jpg" onclick="ShowPic('./assets/20240427_235208.jpg');">
+                    </div>
+                    <div class="thumbselect" style="background-color: #0000002e;">
+                        <img class="bgcine" src="./assets/20240601_144502.jpg" onclick="ShowPic('./assets/20240601_144502.jpg');">
+                    </div>
+                </div>
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+        <div style="height: 100px;"></div>
+        <div id="pictureoverlay" class="overlay hidden" style="background-color: #0000006d; display: flex; flex-direction: column;" onclick="Deactivate(pictureoverlay);">
+            <a style="flex-grow: 1;"></a>
+            <img id="overlaypic" class="bgcine">
+            <a style="flex-grow: 1;"></a>
+        </div>
+    </body>
+</html>
